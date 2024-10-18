@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: black;
+    color: rgb(92, 218, 92);
+}
+.title{
+    text-align: center;
+    height: 10vh;
+    background-color: black;
+    box-shadow: 10px 10px 15px rgba(255, 255, 255, 0.286);
+}
+#name{
+    font-size: 2rem;
+    font-weight: bold;
+}
+p{
+    margin: 50px 150px;
+    line-height: 1.5em;
+}
+
+p span {
+    display: inline-block;
+    transition: transform 0.3s, color 0.3s;
+}
+
+p:hover span {
+    animation: wave 1.5s ease-in-out infinite;
+    color: white;
+}
+
+@keyframes wave {
+    0% { transform: translateY(0); color: rgb(92, 218, 92); }
+    50% { transform: translateY(-10px); color: lightblue; }
+    100% { transform: translateY(0); color: white; }
+}
